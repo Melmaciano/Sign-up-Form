@@ -88,6 +88,8 @@ main {
     flex: 1 0 60%;
     display: flex;
     flex-direction: column;
+    padding: 4em 0;
+    background-color: #eee;
 }
 
 main > * {
@@ -100,13 +102,13 @@ main > * {
     flex-flow: row wrap;
     align-items: center;
     gap: 15px;
-    background-color: #eee;
 }
 
 .form-container {
     flex: 1;
     box-shadow: 0 5px 5px #aaa;
     z-index: 1;
+    background-color: white;
 }
 
 #sign-up-form {
@@ -129,9 +131,7 @@ main > * {
 }
 
 .btn-container {
-    flex: 1.5;
-    background-color: #eee;
-
+    flex: .5;
 }
 
 button {
@@ -146,7 +146,7 @@ input {
     width: calc(10em + 5vw);
 }
 
-*:focus {
+input:focus {
     outline: none;
     border: 2px solid #000092;
     box-shadow: 1px 1px 2px #414141;
@@ -248,5 +248,9 @@ button:active {
     #sign-up-form {
         display: flex;
         flex-direction: column;
+    }
+
+    main {
+        padding-bottom: 2em;
     }
 }
