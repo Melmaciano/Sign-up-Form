@@ -260,6 +260,10 @@ button:active {
     }
 
     main {
-        padding-bottom: 2em;
+        padding: 2em;
+    }
+
+    .background-image {
+        height: 40vh;
     }
 }
