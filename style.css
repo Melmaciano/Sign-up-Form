@@ -1,0 +1,252 @@
+@font-face {
+    font-family: 'norse';
+    src: url(./assets/font/norse-bold-webfont.woff2);
+    src: url(./assets/font/norse-bold-webfont.woff);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'norse', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-image {
+    background-image: url(./assets/images/background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 1 40%;
+}
+
+.logo-text{
+    height: 90%;
+}
+
+.logo-text p {
+    height: 20vh;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    background-color: rgb(0, 89, 255, 0.4);
+    color: white;
+}
+
+.logo-text span {
+    position: relative;
+}
+
+.logo {
+    height: 80%;
+}
+
+.footer {
+    height: 10%;
+    position: relative;
+}
+
+.footer p {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0026ff;
+    text-shadow: 0 0 2px #00072c;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 2px #522c2c;
+}
+
+.footer a:hover, .footer a:active {
+    color: #ffa4a4;
+}
+
+.footer a:active {
+    display: inline-block;
+    transform: translateY(10%);
+    transition: all 0.05s ease-in;
+}
+
+main {
+    flex: 1 0 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+main > * {
+    padding: 1em calc(100% - 500px) 1em 2em;
+}
+
+.introduction-container {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 15px;
+    background-color: #eee;
+}
+
+.form-container {
+    flex: 1;
+    box-shadow: 0 5px 5px #aaa;
+    z-index: 1;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#sign-up-form > h2 {
+    width: 100%;
+    margin-bottom: 0.8em;
+}
+
+#sign-up-form > p {
+    width: 50%;
+    padding: .5em 1em;
+}
+
+#sign-up-form > p > label {
+    display: block;
+}
+
+.btn-container {
+    flex: 1.5;
+    background-color: #eee;
+
+}
+
+button {
+    margin-bottom: 15px;
+}
+
+input {
+    appearance: none;
+    padding: 0.2em;
+    border-radius: 2px;
+    border: 2px solid #eee;
+    width: calc(10em + 5vw);
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #000092;
+    box-shadow: 1px 1px 2px #414141;
+}
+
+input:invalid:not(:placeholder-shown) {
+    border: 2px solid #ce0000;
+}
+
+input + span {
+    position: relative;
+}
+
+input:invalid:not(:placeholder-shown) + span::after {
+    position: absolute;
+    left: 3px;
+    top: 0.1em;
+    content: "X";
+    background-color: red;
+    color: white;
+    font-size: 0.8em;
+    width: 1em;
+    aspect-ratio: 1;
+    padding: 0.2em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input:valid:not(:placeholder-shown) + span::after {
+    position: absolute;
+    left: 3px;
+    top: 0.1em;
+    content: "V";
+    background-color: green;
+    color: white;
+    font-size: 0.8em;
+    width: 1em;
+    aspect-ratio: 1;
+    padding: 0.2em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+input:required:focus + span:before {
+    position: absolute;
+    content: "required";
+    left: -3.5em;
+    top: -170%;
+    padding: 0.2em;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    appearance: none;
+    padding: 0.5em 2em;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #0000d1;
+    background-color: #1b1bff;
+    color: white;
+}
+
+button:hover, button:active  {
+    border: 2px solid #3c3cd4;
+    background-color: #5757ff;
+}
+
+button:active {
+    transform: translateY(5%);
+    transition: all 0.1s ease-in;
+}
+
+.btn-container a {
+    text-decoration: none;
+    color: #1000a1;
+}
+
+.btn-container a:hover, .btn-container a:active {
+    color: #412cff;
+}
+
+.btn-container a:active {
+    display: inline-block;
+    transform: translateY(5%);
+    transition: all 0.1s ease-in;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        display: block;
+    }
+
+    header {
+        height: 40%;
+    }
+
+    #sign-up-form {
+        display: flex;
+        flex-direction: column;
+    }
+}

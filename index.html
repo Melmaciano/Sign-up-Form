@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="background-image">
+        <div class="logo-text">
+            <p>
+                <img src="./assets/logo/odin-lined.png" alt="logo" class="logo">
+                <span>ODIN</span>
+            </p>
+        </div>
+        <div class="footer">
+            <p>
+                Photo by <a href="https://unsplash.com/@ms_uppy" target="_blank" rel="noopener" rel="noreferrer">ms_uppy</a>
+                on <a href="https://unsplash.com/" target="_blank" rel="noopener" rel="noreferrer">UnPlush</a>
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="introduction-container">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus temporibus sapiente ratione repellendus molestiae accusantium iusto incidunt atque, aspernatur minus eius modi ea corrupti facere soluta dolore, natus ducimus cumque!</p>
+            <p>Lorem ipsum dolor</p>
+        </div>
+        <div class="form-container">
+            <form id="sign-up-form" action="">
+                <h2>Let's do this!</h2>
+                <p>
+                    <label for="name">FIRST NAME</label>
+                    <input id="name" name="user-name" type="text" required placeholder="">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="lastname">LAST NAME</label>
+                    <input id="lastname" name="user-last-name" type="text" required placeholder="">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="user-email" type="email" required placeholder="">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="phone-num">PHONE NUMBER</label>
+                    <input id="phone-num" name="user-phone-num" type="tel" placeholder="">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="user-password" type="password" required placeholder="">
+                    <span></span>
+                </p>
+                <p>
+                    <label for="password">CONFIRM PASSWORD</label>
+                    <input id="password" name="user-password" type="password" required placeholder="">
+                    <span></span>
+                </p>
+            </form>
+        </div>
+        <div class="btn-container">
+            <p>
+                <button form="sign-up-form">Create Account</button>
+            </p>
+            <p>
+                Already have an account? <a href="">Log in</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
