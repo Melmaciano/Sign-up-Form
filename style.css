@@ -146,7 +146,7 @@ input {
     width: calc(10em + 5vw);
 }
 
-input:focus {
+*:focus {
     outline: none;
     border: 2px solid #000092;
     box-shadow: 1px 1px 2px #414141;
